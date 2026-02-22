@@ -348,6 +348,7 @@
 
     .project-card.blue::before { background: var(--accent2); }
     .project-card.orange::before { background: var(--accent3); }
+    .tag.orange { border-color: rgba(255,107,53,0.3); color: var(--accent3); }
 
     .project-num {
       font-family: 'JetBrains Mono', monospace;
@@ -660,7 +661,7 @@
   <!-- Stats -->
   <div class="stats-bar">
     <div class="stat-item">
-      <div class="stat-num">2</div>
+      <div class="stat-num">4</div>
       <div class="stat-label">Proyectos completados</div>
     </div>
     <div class="stat-item">
@@ -668,7 +669,7 @@
       <div class="stat-label">Endpoints REST</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">4</div>
+      <div class="stat-num">6+</div>
       <div class="stat-label">Tecnologías dominadas</div>
     </div>
     <div class="stat-item">
@@ -732,6 +733,52 @@
         </div>
       </a>
 
+      <!-- Spring Boot Portfolio -->
+      <a href="https://github.com/Daaviidzz/PortFolioSpringBoot" target="_blank" class="project-card orange reveal">
+        <div class="project-num">03 — Full Stack Web</div>
+        <div class="project-icon" style="background:rgba(255,107,53,0.12)">☕</div>
+        <h3 class="project-title">Portfolio Web — Spring Boot</h3>
+        <p class="project-desc">
+          Aplicación web dinámica para mostrar un portfolio profesional. Backend en Java 17 con
+          Spring Boot 3 y Spring Data JPA. Frontend con Thymeleaf, Bootstrap 5 y efecto
+          Glassmorphism. MySQL en Docker, scroll reveal, barra de progreso y diseño responsive.
+        </p>
+        <div class="project-tags">
+          <span class="tag orange">Java 17</span>
+          <span class="tag orange">Spring Boot</span>
+          <span class="tag">Thymeleaf</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Bootstrap 5</span>
+          <span class="tag">Glassmorphism</span>
+        </div>
+        <div class="project-link">
+          Ver repositorio <span class="project-arrow">↗</span>
+        </div>
+      </a>
+
+      <!-- PokeApi Android -->
+      <a href="https://github.com/Daaviidzz/PokeApi" target="_blank" class="project-card reveal">
+        <div class="project-num">04 — Android App</div>
+        <div class="project-icon" style="background:rgba(255,203,5,0.12)">⚔️</div>
+        <h3 class="project-title">PokéApp — Android & Kotlin</h3>
+        <p class="project-desc">
+          Aplicación nativa Android desarrollada en Kotlin que conecta con la PokéAPI pública.
+          Permite explorar Pokémon, consultar stats, tipos y evoluciones. Arquitectura moderna
+          con Gradle KTS y organización por capas siguiendo buenas prácticas Android.
+        </p>
+        <div class="project-tags">
+          <span class="tag" style="border-color:rgba(255,203,5,0.4);color:#f5c518;">Kotlin</span>
+          <span class="tag" style="border-color:rgba(255,203,5,0.4);color:#f5c518;">Android</span>
+          <span class="tag">PokéAPI</span>
+          <span class="tag">Gradle KTS</span>
+          <span class="tag">REST</span>
+        </div>
+        <div class="project-link">
+          Ver repositorio <span class="project-arrow">↗</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
@@ -750,21 +797,21 @@
           <div class="skill-group">
             <div class="skill-group-title">Backend</div>
             <ul class="skill-list">
-              <li>Python</li>
-              <li>FastAPI</li>
-              <li>SQLModel / SQLAlchemy</li>
-              <li>Pydantic</li>
+              <li>Python / FastAPI</li>
+              <li>Java 17 / Spring Boot</li>
+              <li>SQLModel / Spring Data JPA</li>
+              <li>Pydantic / Thymeleaf</li>
               <li>Uvicorn / ASGI</li>
             </ul>
           </div>
           <div class="skill-group">
             <div class="skill-group-title">Mobile / Desktop</div>
             <ul class="skill-list">
-              <li>C# / .NET</li>
-              <li>.NET MAUI</li>
-              <li>XAML</li>
+              <li>C# / .NET MAUI</li>
+              <li>Kotlin / Android</li>
+              <li>XAML / Jetpack</li>
               <li>Patrón MVVM</li>
-              <li>HTTP Client</li>
+              <li>HTTP Client / REST</li>
             </ul>
           </div>
           <div class="skill-group">
@@ -824,9 +871,10 @@
             <div class="t-line"><span class="t-output">}</span></div>
             <br>
             <div class="t-line"><span class="t-prompt">➜</span><span class="t-cmd">git log --oneline -3</span></div>
-            <div class="t-line"><span class="t-output"><span class="t-comment">a3f1e2c</span> feat: deploy api con docker compose</span></div>
-            <div class="t-line"><span class="t-output"><span class="t-comment">8b2d901</span> feat: crud completo .NET MAUI</span></div>
-            <div class="t-line"><span class="t-output"><span class="t-comment">5c4a7f0</span> init: proyecto fastapi + sqlmodel</span></div>
+            <div class="t-line"><span class="t-output"><span class="t-comment">a3f1e2c</span> feat: pokeapi kotlin android app</span></div>
+            <div class="t-line"><span class="t-output"><span class="t-comment">8b2d901</span> feat: portfolio springboot glassmorphism</span></div>
+            <div class="t-line"><span class="t-output"><span class="t-comment">5c4a7f0</span> feat: crud completo .NET MAUI</span></div>
+            <div class="t-line"><span class="t-output"><span class="t-comment">1d9e33a</span> init: api empleados fastapi + docker</span></div>
             <br>
             <div class="t-line"><span class="t-prompt">➜</span><span class="t-cmd"><span class="t-cursor"></span></span></div>
           </div>
@@ -845,12 +893,10 @@
       <a href="https://github.com/Daaviidzz" target="_blank" class="btn btn-primary">
         GitHub ↗
       </a>
-      <a href="https://github.com/Daaviidzz/ApiEmpleadosFastAPI" target="_blank" class="btn btn-outline">
-        FastAPI Repo
-      </a>
-      <a href="https://github.com/Daaviidzz/MauiGestionEmpleados" target="_blank" class="btn btn-outline">
-        MAUI Repo
-      </a>
+      <a href="https://github.com/Daaviidzz/ApiEmpleadosFastAPI" target="_blank" class="btn btn-outline">FastAPI Repo</a>
+      <a href="https://github.com/Daaviidzz/MauiGestionEmpleados" target="_blank" class="btn btn-outline">MAUI Repo</a>
+      <a href="https://github.com/Daaviidzz/PortFolioSpringBoot" target="_blank" class="btn btn-outline">Spring Boot Repo</a>
+      <a href="https://github.com/Daaviidzz/PokeApi" target="_blank" class="btn btn-outline">PokéApi Repo</a>
     </div>
   </section>
 
